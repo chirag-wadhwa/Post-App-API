@@ -26,12 +26,6 @@ class SinglePost extends Component {
         return res.json();
       })
       .then(resData => {
-        // for (var i = 0; i < resData.post.imageUrl.length; i++) {
-        //   if (resData.post.imageUrl[i] === '\\') {
-        //     resData.post.imageUrl[i] = '/';
-        //   }
-        // }
-        // console.log(typeof resData.post.imageUrl);
         this.setState({
           title: resData.post.title,
           author: resData.post.creator.name,
